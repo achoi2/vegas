@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.back-button {
+  margin: 20px 0 25px 0;
+  border: none;
+  color: purple;
+  background: transparent;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.venetian-img {
+  margin-bottom: 25px;
+}
+
+.column {
+  margin-left: 30px;
+  flex-grow: 1;
+}
+
+.header-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hotel-info {
+  color: #4d4d4d;
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hotel-info li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.hotel-name {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.hotel-price {
+    color: #ff8c00;
+    font-size: 70px;
+}
+
+.hotel-price-text {
+    color: #4d4d4d;
+}
+
+.body-container {
+  display: flex;
 }
